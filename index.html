@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        Guess-the-number
+      </div>
+      <ul class="upper">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contacts</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="container">
+      <article class="box">
+        <h2>Guess the Number</h2>
+        <label for="to">Input 1:</label>
+        <input required id="to" type="number" placeholder="input1">
+        <button class="button" id="submit1">Submit</button>
+      </article>
+      <article class="box">
+        <h2>Guess Again</h2>
+        <label for="inp">Input 2:</label>
+        <input required id="inp" type="number" placeholder="input2">
+        <button class="button" id="submit2">Submit</button>
+      </article>
+    </section>
+    <div id="result"></div>
+    <aside class="other">
+      <h2>Games-Rules</h2>
+      <ul>
+        <li>Enter number range you want to guess in input1</li>
+        <li>Enter your guessed number in input2</li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <div>
+      Here are some other games you can enjoy. <em>Click on</em>
+    </div>
+    <ul>
+      <li><button onclick="snake_water_gun()">Snake-Water-Gun</button></li>
+      <li><button onclick="to_do()">To-Do-List</button></li>
+    </ul>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
